@@ -17,10 +17,12 @@ from future import standard_library
 from .category import Category
 from .survey import Survey
 
+
 try:  # pragma: no cover
-    from _collections import OrderedDict
+    from collections import OrderedDict
 except ImportError:  # pragma: no cover
     from ordereddict import OrderedDict
+
 
 LOGGER = logging.getLogger(__name__)
 

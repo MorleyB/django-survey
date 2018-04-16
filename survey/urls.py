@@ -16,11 +16,15 @@ standard_library.install_aliases()
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='survey-list'),
     url(r'^(?P<id>\d+)/', SurveyDetail.as_view(), name='survey-detail'),
-    url(r'^csv/(?P<pk>\d+)/', serve_result_csv, name='survey-result'),
+
+    url(r'^csv/(?P<pk>\d+)/', serve_result_csv, name='survey-result'), 
+    
     url(r'^(?P<id>\d+)/completed/', SurveyCompleted.as_view(),
-        name='survey-completed'),
+        name='survey-completed'), # REMOVE?
+    
     url(r'^(?P<id>\d+)-(?P<step>\d+)/', SurveyDetail.as_view(),
-        name='survey-detail-step'),
+        name='survey-detail-step'), # REMOVE?
+
     url(r'^confirm/(?P<uuid>\w+)/', ConfirmView.as_view(),
         name='survey-confirmation'),
 ]

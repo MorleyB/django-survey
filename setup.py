@@ -42,9 +42,7 @@ setup(
         "Framework :: Django",
     ],
     install_requires=[
-        "Django", "django-bootstrap-form", "django-tastypie",
-        "django-registration", "pytz", "future", "ordereddict", "PyYAML",
-        "matplotlib", "seaborn", "numpy"
+        "Django", "django-tastypie", "pytz", "future", "ordereddict", "PyYAML"
     ],
     extras_require={
         'dev': ["django-rosetta", "pylint", "coverage", "mock"],

@@ -8,6 +8,7 @@ django_survey_and_report.egg-info/
 survey_test/static/
 env
 survey_test_bak
+.python-version
 .env/
 .3env/
 .project
